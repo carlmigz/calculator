@@ -37,7 +37,7 @@ def calculator():
             return
 
     # Display result
-    print(f"\n{num1} {operator} {num2} = {result}")
+    print(f"\n{num1} {operator} {num2} = {format(result, '.20f')}".rstrip('0').rstrip('.'))
 
 # Run the calculator
 calculator()
